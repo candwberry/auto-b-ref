@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Berry Ref",
+    "version": "1.0",
+    "description": "Automatically copies B-refs from cwberry.com pages",
+    "permissions": ["storage", "clipboardWrite", "activeTab"],
+    "host_permissions": [
+        "*://*.cwberry.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/favicon.png",
+            "48": "/favicon.png",
+            "128": "/favicon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.cwberry.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
