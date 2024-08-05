@@ -3,7 +3,7 @@ let currentBRef = '';
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request.action === "checkBRef") {
-      const regex = /B\d{7}$/;
+      const regex = /B\d{7}(-[a-zA-Z0-9-]*)?$/;
       const match = request.bRef.match(regex);
       if (match) 
         navigateToProductPage(request.bRef);
@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener(
 );
 
 function findAndProcessCode() {
-  const regex = /B\d{7}/;
+  const regex = /B\d{7}(-[a-zA-Z0-9-]*)?$/;
   const pageContent = document.body.innerText;
   const match = pageContent.match(regex);
   
