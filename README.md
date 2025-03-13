@@ -1,4 +1,4 @@
-# auto-bref
+# auto-b-ref
 Google Chrome extension which automatically copies C&W Berry SKU's on www.cwberry.com product pages.
 
 (Peek the 'Copied B2150158 to clipboard')
