@@ -1,5 +1,5 @@
 # auto-bref
-Google Chrome extension which automatically copies the Berry SKU on cwberry.com pages
+Google Chrome extension which automatically copies C&W Berry SKU's on www.cwberry.com product pages.
 
 (Peek the 'Copied B2150158 to clipboard')
 
@@ -13,4 +13,4 @@ Google Chrome extension which automatically copies the Berry SKU on cwberry.com 
 5. Enable Developer mode
 6. Click on `Load unpacked`
 7. Select the extracted folder
-8. Done! 🎉 The extension should be ready for you!
+8. Done! 🎉
