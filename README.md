@@ -2,6 +2,7 @@
 Google Chrome extension which automatically copies the Berry SKU on cwberry.com pages
 
 (Peek the 'Copied B2150158 to clipboard')
+
 ![Screenshot Example](https://github.com/user-attachments/assets/9f670e85-a935-4bbc-8493-e5270b1cf015)
 
 # Installation
