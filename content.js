@@ -12,10 +12,10 @@ chrome.runtime.onMessage.addListener(
 );
 
 function findAndProcessCode() {
-  const regex = /B\d{7}(-[a-zA-Z0-9-]*)?$/;
+  const regex = /B\d{7}(-[a-zA-Z0-9-]*)?/;
   const pageContent = document.body.innerText;
   const match = pageContent.match(regex);
-  
+  console.log('findAndProcessCode called, match:', match);
   if (match) {
     const code = match[0];
       chrome.storage.sync.get(['autoCopy'], function(result) {
@@ -80,6 +80,7 @@ function checkAndClickFirstProduct() {
   }
 
 function showToast(message) {
+  console.log('showToast called with message:', message);
   const toast = document.createElement('div');
   toast.innerHTML = message;
   toast.style.cssText = `
@@ -109,5 +110,6 @@ function showToast(message) {
 }
 
 // Initial checks when the script loads
+// Call findAndProcessCode immediately and then every 3 seconds
 findAndProcessCode();
 checkAndClickFirstProduct();
